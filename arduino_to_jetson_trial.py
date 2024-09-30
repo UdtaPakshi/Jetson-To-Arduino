@@ -2,7 +2,7 @@ import serial
 import time
 
 # Initialize serial connection (adjust port as needed, usually ttyUSB0 or ttyACM0)
-ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 
 # Give some time to establish the connection
 time.sleep(2)
