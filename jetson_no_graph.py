@@ -5,7 +5,7 @@ import time
 import numpy as np
 
 # Connect to Arduino via serial
-arduino = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)  # Ensure the correct port
+arduino = serial.Serial('/dev/ttyACM0', 9600, timeout=1)  # Ensure the correct port
 
 def send_to_arduino(meal_times, Dg, t, y):
     data = ",".join(map(str, meal_times + Dg + [t] + y))
